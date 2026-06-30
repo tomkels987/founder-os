@@ -1,0 +1,116 @@
+# [VENTURE NAME] — root context
+
+> This is the first file any AI reads before doing anything for [VENTURE NAME].
+> Keep it true, keep it current. If something here is wrong, the whole brain is wrong.
+> **To use:** fill in every `[...]` placeholder, delete the worked example once you've replaced it with your own, and save this file as `CLAUDE.md`.
+
+---
+
+## The venture
+
+**[VENTURE NAME]** is [one sentence: what you do and for whom].
+
+**Core thesis:** [the one belief your company is a bet on — the thing you think the world is wrong about].
+
+**Category:** [the market you're in, or the one you're trying to create].
+
+*Worked example (replace this whole block):*
+> **Northwind** is a self-serve analytics tool for early-stage SaaS teams who can't afford a data engineer.
+> **Core thesis:** Most "self-serve analytics" still needs an analyst. We make it genuinely self-serve.
+> **Category:** Embedded analytics for non-technical operators.
+
+---
+
+## The team
+
+| Name | Role | Background (one line) |
+|---|---|---|
+| [Your name] | Founder & CEO | [the most credible thing about you] |
+| [Name] | [Role] | [background] |
+| [Name] | [Advisor / role] | [background] · **Status: [engaged / proposal sent / informal]** |
+
+*Worked example:*
+> | Alex Rivera | Founder & CEO | Built the data team at [prior SaaS], 6 yrs. |
+> | Jordan Lee | Founding engineer | Ex-[infra company]. |
+> | Sam Okafor | Advisor — GTM | 2x SaaS exits. **Status: informal, monthly.** |
+
+---
+
+## The model
+
+| | |
+|---|---|
+| **What the customer gets** | [the value you deliver] |
+| **What you charge** | [pricing model] |
+| **How you make money** | [revenue streams] |
+| **Why it's defensible** | [the moat, honestly stated] |
+
+---
+
+## Current goals (the OKRs that govern everything)
+
+> These are the *targets you set* — canonical here. Where you actually stand is derived from your CRM and tracked in `OKRS.md` (see the brain-hygiene rule below). Keep these to **three at most**. If a task doesn't move one of them, it waits.
+
+- **O1 — [the keystone objective].** KR: [measurable result], by [date]. *(Keystone: the one that unlocks the others.)*
+- **O2 — [objective].** KR: [measurable result], by [date].
+- **O3 — [objective].** KR: [measurable result], by [date].
+
+The live scorecard with current standing lives in `OKRS.md`.
+
+*Worked example (SaaS):*
+> - **O1 — Land 3 paying design partners.** KR: ≥3 signed by end of Q3. *(Keystone — proof unlocks everything.)*
+> - **O2 — Raise the seed** *(if you raise)*. KR: [target] committed by [date]. *Not raising? Make O2 a non-raise goal instead — e.g. "Reach $20k MRR" or "Hit cash-flow positive by [date]."*
+> - **O3 — Ship the self-serve onboarding.** KR: time-to-first-insight under 10 min.
+
+*The same shape works for any business — the keystone (O1) is whatever proof unlocks the rest:*
+> - **Agency:** O1 — "Land 2 retainer clients."
+> - **Creator:** O1 — "Hit 10k subscribers."
+> - **E-commerce:** O1 — "Reach profitable CAC at scale."
+
+---
+
+## Folder map
+
+Where everything lives. The folders mirror the org — one area, one home.
+
+```
+[venture]/
+├── CLAUDE.md              ← this file — root context, read first
+├── OKRS.md               ← the three goals + current standing (derived)
+├── CONTROL_CENTRE.md     ← single 30-second scan of where things are
+├── SOURCES_OF_TRUTH.md   ← which file owns which fact + precedence ladder
+├── INGESTION_GATE.md     ← the gate on everything new (fact/validate/disregard)
+├── SCHEDULE.md           ← what routines fire, when, on which machine
+├── _routines/            ← the routine prompts + their run logs (runs/)
+├── _crm/                 ← people: customers, investors, advisors, to-meet
+├── _memory/              ← patterns/lessons, brain-health logs, the extraction queue
+├── research/             ← deep dives + a RESEARCH_TRACKER.md index
+├── decisions/            ← DECISIONS.md (what was decided + why)
+└── tools/                ← dashboard.py + any scripts
+```
+
+Adjust to fit your org — but keep the rule: **one area, one folder; one fact, one owner.**
+
+---
+
+## The brain-hygiene rule (read before writing any fact)
+
+This is the part that makes the OS trustworthy. Three laws:
+
+1. **One source of truth per fact.** Every fact has ONE canonical home (one official file that owns it) — see `SOURCES_OF_TRUTH.md` for the map and the precedence ladder (signed doc > customer/first-party > CRM > positioning). Derived views (`OKRS.md`, `CONTROL_CENTRE.md`) restate, never own.
+
+2. **A gate on what gets in.** Every new input passes `INGESTION_GATE.md` (fact / validate / disregard) before it enters. **Numbers said to investors, customers, partners, or your audience are positioning, not fact. A flattering number is guilty until validated.** Stamp every fact with its source and date (its *provenance*).
+
+3. **Human on the doubts.** On any clash — two files disagree, a number can't be stood up — surface both sides and ask me. **Never silently pick a winner.**
+
+---
+
+## How I work (operating notes for the AI)
+
+> Tune this to you. A few that travel well:
+
+- **Lead with the answer, then the reasoning.** Don't make me read to the point.
+- **Push back when I'm wrong.** I'd rather be challenged than flattered.
+- **Draft, never send.** Every email/message/post is a draft until I fire it. Never move money or place an order — present the steps, I click.
+- **No secrets in files.** Refer to accounts by name only; never store card numbers, passwords, or account numbers.
+- **British/American English:** [your preference]. Sign-off: [your sign-off].
